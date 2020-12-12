@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="5"
+        >
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_weight="0.3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:text="The Coffee House đồng hành cùng bạn Go Green ! ..."
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_weight="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/share"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tt3"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_news"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="26sp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:text="The Coffee House đồng hành cùng bạn Go Green !"/>
+    <TextView
+        android:id="@+id/tv_text"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tại The Coffee House, hành trình Go Green được lan toả mỗi ngày bằng những hành động thiết thực mang tính cộng đồng. Chúng tôi mong muốn truyền cảm hứng đến thật nhiều bạn trẻ, từ đó cùng nhau hành động để thay đổi và bảo vệ môi trường xanh quanh mình. \n
+Bằng việc sử dụng bình-ly giữ nhiệt, ly sứ, quai vải,... để thay thế cho ly nhựa, túi nilông đã góp phần giảm thiểu nhựa khó phân huỷ, nhựa dùng một lần, đóng góp tích cực cho việc bảo vệ môi trường.
+Để bạn luôn cảm thấy tươi mới, The Coffee House không ngừng sáng tạo và mang đến cho bạn những “người bạn xanh”  vừa thân thiện với môi trường, vừa có ngoại hình xinh xắn, trẻ trung. Hãy cùng khám phá và chọn cho mình một người bạn xanh nhé!"
+        />
+
+</RelativeLayout>
